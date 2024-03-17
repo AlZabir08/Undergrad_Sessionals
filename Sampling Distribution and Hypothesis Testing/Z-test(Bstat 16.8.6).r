@@ -1,0 +1,9 @@
+n1<-60
+x1<-18
+p1<-x1/n1
+n2<-100
+x2<-22
+p2<-x2/n2
+p<-(n1*p1+n2*p2)/(n1+n2)
+z<-(p1-p2)/sqrt(p*(1-p)*(1/n1+1/n2))
+z_upper<-qnorm(0.05,lower.tail=FALSE)
